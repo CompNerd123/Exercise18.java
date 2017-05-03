@@ -16,8 +16,6 @@ public class exercise18 {
         ArrayList<Integer> array = new ArrayList<Integer>();
         Integer intcount = 0;
 
-
-
         while(true)
         {
             System.out.println("Please enter a number (enter a non-Integer to end)");  //prompt
