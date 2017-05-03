@@ -4,11 +4,12 @@ Write a program that read in arbitrary
 numbers of integers that are in the range 0 to 50
 inclusive and counts how many occurrence of each are entered.*/
 
-import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.InputMismatchException;
+  import java.util.Scanner;
+  import java.util.ArrayList;
+  import java.util.InputMismatchException;
 
-public class exercise18 {
+  public class exercise18 {
+    
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
@@ -18,11 +19,11 @@ public class exercise18 {
 
         while(true)
         {
-            System.out.println("Please enter a number (enter a non-Integer to end)");  //prompt
+            System.out.println("Please enter a number (enter a non-Integer to end)");  
             try{
                 Integer x = input.nextInt();
                 array.add(x);
-                if (x>=0 && x<=50) { //conditions
+                if (x>=0 && x<=50) {
                     intcount++;
                 }
             }
@@ -33,6 +34,6 @@ public class exercise18 {
 
         System.out.println();
         System.out.format("The numbers you entered were: %s\n", array);
-        System.out.format("The intcount of in-range numbers was: %d\n", intcount); //output
+        System.out.format("The intcount of in-range numbers was: %d\n", intcount); 
     }
 }
